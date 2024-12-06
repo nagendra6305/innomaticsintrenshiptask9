@@ -42,7 +42,7 @@ SetData({
         alert("No item selected for update");
         return;
       }
-      const response = await axios.put(`https://innomaticsintrenshiptask9.onrender.com//todo/${update.id}`, 
+      const response = await axios.put(`https://innomaticsintrenshiptask9.onrender.com/todo/${update.id}`, 
         { Description: update.Description }, 
         {due_date:update.due_date},
         
