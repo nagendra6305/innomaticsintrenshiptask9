@@ -1,0 +1,96 @@
+.input-main{
+    background-color:white;
+  height: 30px;
+  color: black;
+
+ 
+  
+  }
+  .inputdiv{
+
+   padding: 15px;
+  }
+.maincontainer{
+  margin-top: 20px;
+ 
+
+}
+  .mainbody{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-image: url("https://img.freepik.com/free-photo/abstract-gradient-neon-lights_23-2149279175.jpg?t=st=1732858723~exp=1732862323~hmac=b9a7204e8f545930838354c7141084cc7dee24def84fcda1ebd06c5d7a810d05&w=996");
+   background-size: 1620px 1890px; 
+    background-repeat: no-repeat;  
+    background-position: center; 
+    
+    
+   
+  
+  }
+  li{
+
+    color: white;
+    background-color: burlywood;
+    margin: 5px;
+    padding: 10px;
+    width: 450px;
+    position: relative;
+    overflow: auto;
+    max-height: 150px;
+   
+  }
+  
+  .updateicon {
+position: absolute;
+    width: 30px;
+    height: 25px;
+    top: 10px; 
+    right: 20px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+ 
+  }
+ 
+
+   
+    
+    .deleteicon {
+        position: absolute; 
+        width: 30px; 
+        height: 25px; 
+        top: 10px; 
+        right: 50px;
+        background: none; 
+        border: none; 
+        padding: 0; 
+        cursor: pointer; 
+      }
+
+      .logoutbutton{
+        position: absolute;
+        top: 10px;
+        right: 19px;
+        border-radius: 50px;
+        background-color: red;
+    color: white;
+      }
+
+      @media  (min-width:320px){
+        .mainbody{
+          min-height: 155vh;
+          min-width: 75vh;
+          background-image: url("https://img.freepik.com/free-photo/abstract-gradient-neon-lights_23-2149279175.jpg?t=st=1732858723~exp=1732862323~hmac=b9a7204e8f545930838354c7141084cc7dee24def84fcda1ebd06c5d7a810d05&w=996");
+          background-size: 1620px 1890px; 
+          background-position: center; 
+        }
+        .li{
+          width: 395px;
+        }
+      }
+  
+      
+       

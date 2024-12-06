@@ -1,0 +1,27 @@
+.spinnerbody{
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background: #d5d0d6;
+
+}
+.spinner{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+   
+    border-radius: 50%;
+    border: 15.4px solid #d5d0d6;
+    border-left-color: #7f0099;
+    border-right-color: #7f0099;
+    box-shadow: 0 0 10px #7f0099;
+    animation: animateSpin .8s ease-in-out infinite;
+
+}
+@keyframes animateSpin {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
