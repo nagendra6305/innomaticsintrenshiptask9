@@ -10,7 +10,7 @@ const Profile = () => {
 
 
     useEffect(()=>{
-      axios.get("http://localhost:5000/myprofile",{
+      axios.get("https://innomaticsintrenshiptask9.onrender.com/myprofile",{
         headers:{
           "x-token": Token 
         }

@@ -22,7 +22,7 @@ const Todolist = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:5000/todo", Data, {
+    axios.post("https://innomaticsintrenshiptask9.onrender.com/todo", Data, {
       headers: { 'x-token': Token }
     }).then(res => {alert(res.data);}).catch(err => {console.error(err);});
 SetData({
@@ -33,7 +33,7 @@ SetData({
 
   const deletehandler  = (id)=>{
   
-  axios.delete(`http://localhost:5000/todo/${id}`).then(res=>alert(res.data))
+  axios.delete(`https://innomaticsintrenshiptask9.onrender.com/todo/${id}`).then(res=>alert(res.data))
   }
   
   const updatehandler = async () => {
@@ -42,7 +42,7 @@ SetData({
         alert("No item selected for update");
         return;
       }
-      const response = await axios.put(`http://localhost:5000/todo/${update.id}`, 
+      const response = await axios.put(`https://innomaticsintrenshiptask9.onrender.com//todo/${update.id}`, 
         { Description: update.Description }, 
         {due_date:update.due_date},
         
@@ -62,7 +62,7 @@ SetData({
  
   const fetchTodoList = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/todolist", {
+      const response = await axios.get("https://innomaticsintrenshiptask9.onrender.com/todolist", {
         headers: { 'x-token': Token }
         
       });

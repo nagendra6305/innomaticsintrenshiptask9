@@ -29,7 +29,7 @@ const Login = () => {
     const submitHandler= async (e)=>{
         e.preventDefault();
         try {
-            const response = await axios.post("http://localhost:5000/login", Data);
+            const response = await axios.post("https://innomaticsintrenshiptask9.onrender.com/login", Data);
             const token = response.data.token;
             sessionStorage.setItem('token', token); 
             SetToken(token); 
@@ -55,7 +55,7 @@ const Login = () => {
                </div>
                 <input className='button' type='submit'  value="Login"/>
                 <div className='register-link'>
-                    <p>Don't have an account <a href='http://localhost:3000'>Register</a></p>
+                    <p>Don't have an account <a href='https://innomaticsintrenshiptask9.onrender.com/'>Register</a></p>
 
                 </div>
             </form>

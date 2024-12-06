@@ -18,7 +18,7 @@ const Registerfoam = () => {
     }
     const submitHandler= e=>{
         e.preventDefault();
-        axios.post("http://localhost:5000/registration",Data).then(
+        axios.post("https://innomaticsintrenshiptask9.onrender.com/registration",Data).then(
             res=>alert(res.data)
         )
         navigate('/login')
