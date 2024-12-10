@@ -1,5 +1,5 @@
 import React ,{useState,useContext} from 'react'
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import axios from 'axios'
 import { store } from './App'
 import { FaUser } from "react-icons/fa";
@@ -55,7 +55,7 @@ const Login = () => {
                </div>
                 <input className='button' type='submit'  value="Login"/>
                 <div className='register-link'>
-                    <p>Don't have an account <a href='https://innomaticsintrenshiptask9.onrender.com/'>Register</a></p>
+                    <p>Don't have an account < NavLink to='/'>Register</NavLink></p>
 
                 </div>
             </form>

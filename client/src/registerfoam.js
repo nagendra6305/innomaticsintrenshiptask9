@@ -3,7 +3,7 @@ import axios, { Axios } from 'axios'
 import { FaUser } from "react-icons/fa";
 import { FaLock } from "react-icons/fa";
 import "../../client/src/register.css"
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 const Registerfoam = () => {
     const navigate =useNavigate()
@@ -37,7 +37,7 @@ const Registerfoam = () => {
           <div className='input-box'><input name='confirmpassword' onChange={changeHandler}  type='password' placeholder='ConfirmPassword'/> <FaLock className='icon' /></div>
                 <input className='button' type='submit'  value="Register"/>
                 <div className='register-link'>
-                    <p>Already Have An Account <a href='https://innomaticsintrenshiptask9.onrender.com/login'>Login</a></p>
+                    <p>Already Have An Account <NavLink to='/login'>Login </NavLink></p>
 
                 </div>
             </form>
