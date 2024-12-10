@@ -50,7 +50,7 @@ SetData({
       );
       alert(response.data);
       setupdate({ Description: "", id: "" });
-      fetchTodoList(); // Refresh the list
+      fetchTodoList();
     } catch (err) {
       console.error(err);
       alert("Error updating the todo item");
@@ -91,8 +91,8 @@ SetData({
 
       <form onSubmit={submitHandler}>
      
-       {update.Description === "" ? <div className='inputdiv'><input className='input-main'  value={Data.Description} type="text" onChange={changeHandler} placeholder='type description' name='Description' size={34}  /> <input type='submit'  value='Enter' /></div>
-       : <div className='inputdiv'><input className='input-main' type='text'size={33} onChange={(e)=>{setupdate({...update,Description:e.target.value})}} value={update.Description} />&nbsp;
+       {update.Description === "" ? <div className='inputdiv'><input className='input-main'  value={Data.Description} type="text" onChange={changeHandler} placeholder='type description' name='Description' size={33}  /> <input type='submit'  value='Enter' /></div>
+       : <div className='inputdiv'><input className='input-main' size={33} type='text'onChange={(e)=>{setupdate({...update,Description:e.target.value})}} value={update.Description} />&nbsp;
        <button  onClick={()=>updatehandler()}>Update</button></div>}
        <br />
         <label style={{color:"white"}} htmlFor="due_date">due_date:</label>

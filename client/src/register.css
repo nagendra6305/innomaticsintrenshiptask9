@@ -12,20 +12,7 @@
     background-position: center;
 }
 
-/* @media (max-width: 768px) {
-    .Registerbody {
-        background-size: auto;
-        padding: 10px; 
-    }
-}
 
-@media (max-width: 480px) {
-    .Registerbody {
-        background-size: cover;
-        background-position: center; 
-        padding: 20px; 
-    }
-} */
  
 @media (max-width: 768px) {
     .LoginBody {

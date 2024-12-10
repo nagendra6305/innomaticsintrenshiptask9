@@ -11,17 +11,20 @@
    padding: 15px;
   }
 .maincontainer{
+  
   margin-top: 20px;
  
 
 }
   .mainbody{
-    min-height: 100vh;
+    min-height: 100vh; 
+    min-width: 690px; 
     display: flex;
     justify-content: center;
     position: relative;
-    background-image: url("https://img.freepik.com/free-photo/abstract-gradient-neon-lights_23-2149279175.jpg?t=st=1732858723~exp=1732862323~hmac=b9a7204e8f545930838354c7141084cc7dee24def84fcda1ebd06c5d7a810d05&w=996");
-   background-size: 1620px 1890px; 
+  background-image: url("https://img.freepik.com/free-photo/brown-wooden-textured-flooring-background_53876-101851.jpg?t=st=1733821970~exp=1733825570~hmac=5da5da9993b7f56a26262318b46f8b76f45c49bd7c579de239de96f404b2764b&w=996"); 
+  background-size: 100% 100%;
+
     background-repeat: no-repeat;  
     background-position: center; 
     
@@ -29,17 +32,17 @@
    
   
   }
-  li{
+  .li{
 
-    color: white;
+    color: black;
     background-color: burlywood;
     margin: 5px;
-    padding: 10px;
+    padding: 8px;
     width: 450px;
     position: relative;
     overflow: auto;
     max-height: 150px;
- left: -15px;
+right: 10px;
    
   }
   
@@ -82,15 +85,14 @@ position: absolute;
 
       @media  (min-width:320px){
         .mainbody{
-          min-height: 155vh;
-          min-width: 75vh;
-          background-image: url("https://img.freepik.com/free-photo/abstract-gradient-neon-lights_23-2149279175.jpg?t=st=1732858723~exp=1732862323~hmac=b9a7204e8f545930838354c7141084cc7dee24def84fcda1ebd06c5d7a810d05&w=996");
-          background-size: 1620px 1890px; 
+          min-height: 250vh;
+  
+          background-image: url("https://img.freepik.com/free-photo/brown-wooden-textured-flooring-background_53876-101851.jpg?t=st=1733821970~exp=1733825570~hmac=5da5da9993b7f56a26262318b46f8b76f45c49bd7c579de239de96f404b2764b&w=996"); 
+          background-size: 100% 100%;
+       
           background-position: center; 
         }
-        .li{
-          width: 395px;
-        }
+       
       }
   
       
